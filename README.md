@@ -7,7 +7,7 @@
 
 1️⃣ **Clone the Bare Repository**  
 ```sh
-git clone --bare git@github.com:yourusername/dotfiles.git $HOME/.dotfiles
+git clone --bare git@github.com:movbou/mydotfiles.git $HOME/.dotfiles
 ```
 
 2️⃣ **Create an Alias for Easy Management**  
