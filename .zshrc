@@ -1,3 +1,4 @@
+ set -o vi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -79,6 +80,7 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
+	zsh-syntax-highlighting
 	sudo
 	copyfile 
 	archlinux 
@@ -124,5 +126,5 @@ alias paco=/home/gyro/francinette/tester.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$HOME/.venv/bin:$PATH"
-export PATH="$HOME/.venv/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 alias dotfiles='git --git-dir=/home/gyro/.dotfiles --work-tree=/home/gyro'
