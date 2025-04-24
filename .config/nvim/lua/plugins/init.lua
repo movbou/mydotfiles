@@ -66,20 +66,19 @@ return {
 		},
 	},
 		--vimwiki ----------------------------------------------
+  {
+    "vimwiki/vimwiki",
+    lazy = false, -- Important! Load at startup to ensure commands are registered
+    init = function()
+      vim.g.vimwiki_list = {
+        {
+          path = '~/vimwiki/',
+          syntax = 'markdown',
+          ext = '.md'
+        }
+      }
+    end,
+  },
 
-	return {
-		{
-			"vimwiki/vimwiki",
-			init = function()
-				vim.g.vimwiki_list = {
-					{
-						path = "~/vimwiki/",
-						syntax = "markdown",
-						ext = ".md",
-					}
-				}
-			end,
-		}
-	}
 }
 
